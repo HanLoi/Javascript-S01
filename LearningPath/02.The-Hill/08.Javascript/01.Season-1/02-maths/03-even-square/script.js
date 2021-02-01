@@ -7,7 +7,14 @@
     document.getElementById("run").addEventListener("click", () => {
 
         // your code here
+        var a = new Number(1)
+        
+        while (a != 21) {
+          alert (Math.pow (a, 2));
+          a ++;
+        }
 
+      alert (a)
     });
 
 })();
