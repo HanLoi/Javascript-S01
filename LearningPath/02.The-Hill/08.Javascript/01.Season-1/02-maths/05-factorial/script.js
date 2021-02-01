@@ -3,12 +3,25 @@
 
 (() => {
     
-    // to get the value of an input: document.getElementById("element-id").value
+    // to get the value of an input: document.getElementById("element-id").valu
 
     document.getElementById("run").addEventListener("click", () => {
 
         // your code here
+       
+        var n = new Number (document.getElementById("number").value)
+        
+        function factorial(n){
+            //base case
+            if(n == 0 || n == 1){
+                return 1;
+            //recursive case
+            }else{
+                return n * factorial(n-1);
+            }
+        }
+        
+        alert (factorial(n))
 
     });
-
 })();
