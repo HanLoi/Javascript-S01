@@ -8,3 +8,19 @@
 
     // YOUR CODE HERE
 })();
+    function data() {
+    var age = prompt ("What's your age ?")
+    var gender = prompt ("Are you a male of female ?")
+    var country = prompt ("Where do you from ?")
+
+    alert ("You are " + age + " years old. You are a " + gender + " and you live in " + country)
+    
+    var agree = confirm ("Can you confirm ?");
+    
+    return agree
+
+    }
+
+    while (!data()) {
+        alert ("Ok we repeat")
+    }
