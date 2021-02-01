@@ -3,9 +3,12 @@
 (() => {
 
     // to get the value of an input: document.getElementById("element-id").value
+    var Array = document.getElementById("numbers").value.split(",");
 
     document.getElementById("run").addEventListener("click", () => {
-
+            
+        alert (Array.sort((function(a, b) {return a - b})));
+        
         // your code here
 
     });
