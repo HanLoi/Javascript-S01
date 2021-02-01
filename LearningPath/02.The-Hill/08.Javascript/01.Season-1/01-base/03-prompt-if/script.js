@@ -7,5 +7,12 @@
   console.log('Hello Woods programmer');
 
   // YOUR CODE HERE
-})();
+})(); 
 
+var cake = prompt ("Do you want a cake ?")
+
+if (cake == "yes") {
+    alert ("Congratulation !!")
+} else {
+  alert ("more cake for them :p !")
+}
