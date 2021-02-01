@@ -4,19 +4,35 @@
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
 
+
+
     document.getElementById("addition").addEventListener("click", function() {
-        // perform an addition
+        a = new Number (document.getElementById("op-one").value)
+        b = new Number (document.getElementById("op-two").value)
+        var result = a + b
+        alert (result)
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
-        // perform an substraction
+        a = new Number (document.getElementById("op-one").value)
+        b = new Number (document.getElementById("op-two").value)
+        var result = a - b
+        alert (result)
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
-        // perform an multiplication
+        a = new Number (document.getElementById("op-one").value)
+        b = new Number (document.getElementById("op-two").value)
+        var result = a * b
+        alert (result)
     });
 
     document.getElementById("division").addEventListener("click", function() {
-        // perform an division
+        a = new Number (document.getElementById("op-one").value)
+        b = new Number (document.getElementById("op-two").value)
+        var result = a / b
+        alert (result)
     });
 })();
+
+
