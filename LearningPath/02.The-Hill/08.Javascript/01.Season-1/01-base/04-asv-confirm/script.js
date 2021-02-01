@@ -15,9 +15,9 @@
 
     alert ("You are " + age + " years old. You are a " + gender + " and you live in " + country)
     
-    var agree = confirm ("Can you confirm ?");
+    return confirm ("Can you confirm ?");
     
-    return agree
+    
 
     }
 
