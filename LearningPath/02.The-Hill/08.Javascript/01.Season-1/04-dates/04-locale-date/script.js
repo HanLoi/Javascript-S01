@@ -7,5 +7,7 @@
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     // your code here
-
+    let current = new Date()
+    let day = current.toString()
+    document.getElementById("target").innerHTML = day
 })();
