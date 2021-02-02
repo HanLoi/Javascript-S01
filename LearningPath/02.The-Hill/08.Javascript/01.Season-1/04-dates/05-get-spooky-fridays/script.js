@@ -5,5 +5,25 @@
 (() => {
 
     // your code here
+    // var year = document.getElementById("year")
 
+    function friday13th (year) {
+        var d = new Date();
+        var counter = 0;
+        var month;
+    
+        for(month=0;month<12;month++)
+        {
+         d.setFullYear(year, month,13);
+            if (d.getDay() == 5)
+            {
+              counter++;
+            }
+        }
+    
+        return counter;                            
+    }
+
+    document.getElementById("run").addEventListener("click", friday13th(document.getElementById("year"))
+        
 })();
