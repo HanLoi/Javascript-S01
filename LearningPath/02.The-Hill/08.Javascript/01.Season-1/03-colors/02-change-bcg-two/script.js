@@ -3,6 +3,10 @@
 
 (() => {
 
-    // your code here
+    function changeBackground(color) {
+        document.body.style.background = color;
+    }
+
+    run.addEventListener("click",function() { changeBackground(document.getElementById('color').value) });
 
 })();
