@@ -8,12 +8,9 @@
 
     // your code here
     var myDate = new Date();   
-    if ( 
-        myDate.getHours() < 12 )  { 
-          document.getElementById('target').innerHTML ="Good Morning!"; } 
-        else if (  myDate.getHours() <= 18 ) 
+        if (  myDate.getHours() <= 18 ) 
             {     document.getElementById('target').innerHTML ="Hello"; } 
-        else if ( myDate.getHours() > 18 && myDate.getHours() <= 24 )
-             {     document.getElementById('target').innerHTML= "Good Evening!"; } 
+        else
+             { document.getElementById('target').innerHTML= "Good Evening!"; } 
          
 })();
