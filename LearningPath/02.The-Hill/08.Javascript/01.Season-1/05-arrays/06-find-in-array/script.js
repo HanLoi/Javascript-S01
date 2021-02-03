@@ -81,5 +81,10 @@
     ];
 
     // your code here
-
-})();
+    document.getElementById("run").addEventListener("click", () => {
+        people.forEach(element => {
+            if (element.lastname == "Dupont" && element.firstname == "Jean") {
+                console.log(element.email + " situé à l'index " + people.indexOf(element) + " du tableau.");
+            }
+        });
+    });
