@@ -15,4 +15,14 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => { 
+        var count = new Number(0)
+        
+        people.forEach(element => {
+            count++;    })
+
+            console.log(count)
+
+            console.log(people.has("Alexandre"))
+    })
 })();
