@@ -82,5 +82,26 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => { 
+        
+        let total = people.reduce( function (acc, curr) {
+            return acc + curr.age;
+        },0);
+        
+        console.log(total);
+    });
+    
+    /* let valeurInitiale = 0;
+
+        console.log(people.reduce(
+            (accumulateur, valeurCourante) => accumulateur + valeurCourante.age
+            ,valeurInitiale 
+        ));
+
+        console.log(people.reduce(
+            function (accumulateur, valeurCourante) {
+                return accumulateur + new Number(valeurCourante.age);
+            }
+        ,0)); */
 
 })();
