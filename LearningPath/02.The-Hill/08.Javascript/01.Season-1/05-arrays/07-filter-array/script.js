@@ -82,4 +82,12 @@
 
     // your code here
 
+
+    document.getElementById("run").addEventListener("click", () => { 
+        
+        const people18 = people.filter (item => item.age > 18);
+
+        console.log(people18)
+    })
+
 })();
