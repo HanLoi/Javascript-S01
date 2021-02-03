@@ -17,6 +17,14 @@
         "cherry",
     ];
 
+    document.getElementById("run").addEventListener("click", () => {
+        let a = fruits[0]
+        let b = fruits[1]
+        let c = fruits[2]
+        let d = fruits[3]
+
+        alert (a +" " + b +" " +c +" " + d) })
+
     // your code here
 
 })();
