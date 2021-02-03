@@ -31,4 +31,23 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => { 
+    
+        document.getElementById("run").addEventListener("click", () => {
+            let bird = birds[Math.floor(Math.random()* (birds.length-1))];
+            let listad = adjectives.values();
+            
+            let adje;
+    
+            for (let index = 0; index < Math.floor(Math.random()* (adjectives.size)); index++) {
+                adje = listad.next().value;
+            }
+            
+            if(bird.fem){
+                document.getElementById("target").innerHTML = "la "+ bird.name + " "  + adje+ "e";
+            }else{
+                document.getElementById("target").innerHTML = "le "+ bird.name + " "+adje ;
+            }
+        })
+    })
 })();
