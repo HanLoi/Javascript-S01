@@ -3,7 +3,7 @@
 
 (() => {
 
-    let fruits = [
+    var fruits = [
         "apple",
         "pear",
         "raspberry",
@@ -18,11 +18,20 @@
         "cherry",
     ];
 
+    var fLen = fruits.length;
     // your code here
     document.getElementById("run").addEventListener("click", () => {
         
-        fruits.forEach(function(item, index, array) {
-           
-            console.log(item, index); })})
 
+            fLen = fruits.length;
+
+            let i = new Number(0)
+
+            let text = " ";
+            for (i = 0; i < fLen; i++) {
+              text += " " + fruits[i] + " ";
+            }
+            text += " ";
+
+            console.log(text)})
 })();
