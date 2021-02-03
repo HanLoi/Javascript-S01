@@ -22,4 +22,20 @@
 
     // your code here
 
+    function removeDups(names) {
+        let unique = {};
+        names.forEach(function(i) {
+          if(!unique[i]) {
+            unique[i] = true;
+          }
+        });
+        return Object.keys(unique);
+      }
+
+    document.getElementById("run").addEventListener("click", () => { 
+
+        console.log(removeDups(fruits))
+
+    })
+
 })();
