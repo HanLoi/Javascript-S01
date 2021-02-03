@@ -37,5 +37,15 @@
         console.log(removeDups(fruits))
 
     })
+    /*    -- Méthode Laura --
+    
+        document.getElementById("run").addEventListener("click", ()=>{
+        
+        function removeDuplicates(data) {
+            return data.filter((value, index) => data.indexOf(value) === index);
+        }
 
+        console.log(removeDuplicates(fruits));
+
+    }) */
 })();
