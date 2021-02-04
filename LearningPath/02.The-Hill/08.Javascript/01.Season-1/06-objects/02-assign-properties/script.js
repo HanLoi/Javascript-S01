@@ -19,4 +19,35 @@
         user: null,
     };
     // your code here
+    document.getElementById("run").addEventListener("click", () => {  
+        
+        //const fullcompt = Object.assign(computers, defaultProps);
+        // computers[1].available = "xxx"
+
+        computers.forEach(index => {
+ 
+                
+                if (index.available == undefined) {
+                    index.available = defaultProps["available"];
+                
+                }if (index.os == undefined) {
+                    index.os = defaultProps["os"];
+
+                }if (index.user == undefined) {
+                    index.user = defaultProps["user"];
+                }
+            }
+            )
+           
+
+        
+
+
+        console.log(computers) })
+
+
+
+
+
+    
 })();
