@@ -7,25 +7,37 @@
             return `${this.constructor.greeting}! I'm ${this.name}!`;
         }
     }
-    // your code here
 
-    class dog extends Animal {
-        constructor(name,greeting){
+    class Cat extends Animal {
+
+        constructor(name) {
+            super();
             this.name = name;
-            static greeting= greeting
         }
-            static greeting() {
-                return "Hello"}
 
-            super.sayHello()
+        static greeting = "Miaou ";
 
     }
-}
 
+    class Dog extends Animal {
 
-    document.getElementById("run").addEventListener("click", () => { 
+        constructor(name) {
+            super();
+            this.name = name;
+        }
 
-        console.log( toutou = new dog("Tête de con" , "Hola").sayHello())
+        static greeting = "Waouf ";
 
-    })
+    }
+    
+    document.getElementById("run").addEventListener("click", ()=>{
+
+        let firstcat = new Cat("Poupouce");
+        let firstdog = new Dog("Brutus");
+
+        console.log(firstcat.sayHello());
+        console.log(firstdog.sayHello());
+
+    }) 
+
 })();
