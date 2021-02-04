@@ -30,20 +30,22 @@
                 if (index.available == undefined) {
                     index.available = defaultProps["available"];
                 
-                }if (index.os == undefined) {
+                }
+                if (index.os == undefined) {
                     index.os = defaultProps["os"];
 
-                }if (index.user == undefined) {
+                }
+                if (index.user == undefined) {
                     index.user = defaultProps["user"];
                 }
-            }
-            )
+            })
            
 
         
 
 
-        console.log(computers) })
+            console.log(computers) 
+        })
 
 
 
