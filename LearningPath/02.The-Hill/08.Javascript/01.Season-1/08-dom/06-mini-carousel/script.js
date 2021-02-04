@@ -15,17 +15,16 @@
 
     
 
-    var a = new Number(0)
-    
-    document.querySelector("img").setAttribute("src", gallery [a])
+    let next = [1];
 
-    console.log(a)
     document.getElementById("next").addEventListener("click", ()=>{
 
-        a = a + 1;
-       
-      
-        return a
+        document.querySelector("img").setAttribute("src", gallery[next ++]);
+
+        if (next == gallery.length) {
+            next = [0];
+        }
+
     })
 
 
