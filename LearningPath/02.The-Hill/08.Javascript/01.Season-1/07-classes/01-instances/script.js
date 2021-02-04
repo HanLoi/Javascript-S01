@@ -11,8 +11,8 @@
     // your code here
     document.getElementById("run").addEventListener("click", () => { 
 
-        console.log(new Cat ("Skitty", 9))
-        console.log(new Cat ("Pixel", 6))
+        console.log(new Cat ("Skitty", "9 years"))
+        console.log(new Cat ("Pixel", "6 years"))
 
     })
 
