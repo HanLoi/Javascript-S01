@@ -13,4 +13,21 @@
 
     // your code here
 
+    
+
+    var a = new Number(0)
+    
+    document.querySelector("img").setAttribute("src", gallery [a])
+
+    console.log(a)
+    document.getElementById("next").addEventListener("click", ()=>{
+
+        a = a + 1;
+       
+      
+        return a
+    })
+
+
+ 
 })();
