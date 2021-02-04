@@ -4,5 +4,10 @@
 (() => {
 
     // your code here
+    /*let p = document.querySelectorAll(".target");
+    p.forEach( p => p.innerHTML = "owned");*/
+
+    document.querySelectorAll(".target").forEach(p =>{p.innerHTML="Owned"} );
+
 
 })();

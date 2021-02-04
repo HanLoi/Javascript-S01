@@ -5,4 +5,8 @@
 
     // your code here
 
+    document.getElementById("target").style.backgroundImage = `url('${document.getElementById("source").getAttribute("data-image")}')`;
+    
+    document.getElementById("source").removeAttribute("data-image")
+
 })();
