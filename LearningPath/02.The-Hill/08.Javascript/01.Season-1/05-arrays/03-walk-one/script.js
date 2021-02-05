@@ -29,9 +29,9 @@
 
             let text = " ";
             for (i = 0; i < fLen; i++) {
-              text += " " + fruits[i] + " ";
+              text = text + " " + fruits[i] + " ";
             }
-            text += " ";
 
-            console.log(text)})
+            console.log(text)
+          })
 })();
