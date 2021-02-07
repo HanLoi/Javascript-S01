@@ -14,7 +14,7 @@
 
     ns.getComments = (_, next) =>
         ns.wait(200, () =>
-            next(
+            next(   
                 null,
                 Array.from(new Array(utils.getRandomInt(5, 10)).keys()).map(
                     id => ({id, ...utils.generateComment()}),

@@ -3,4 +3,18 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+
+        document.getElementById('run').addEventListener('click',() =>{
+        
+            lib.getPosts(callback);
+    
+            function callback (error, articles) {
+                console.log(articles)
+            }
+    
+        })
+
+})
+
 })();
