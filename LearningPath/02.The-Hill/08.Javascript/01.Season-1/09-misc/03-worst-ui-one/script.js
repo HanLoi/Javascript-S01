@@ -3,6 +3,10 @@
 
 (() => {
 
-    // your code here
+    document.getElementById("slider").addEventListener("mousemove", () => {
+
+        document.getElementById("target").innerHTML = 0${document.getElementById("slider").value}; // "concaténation"
+
+    })
 
 })();
