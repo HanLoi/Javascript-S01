@@ -6,4 +6,6 @@
     // your code here
     document.querySelector("#target").innerHTML ="owned"
 
+    console.log(document.querySelector("#target").innerHTML)
+
 })();
